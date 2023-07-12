@@ -55,7 +55,7 @@ function teaInfo () {
  } 
 
  function merlinAppears (){
-    document.getElementById('merlin').src="images/merls.png";
+    document.getElementById('merlin').src="images/merls2.png";
    
 
  }

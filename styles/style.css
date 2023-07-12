@@ -20,7 +20,6 @@ a{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    /* background-color:rgb(126, 56, 126); */
     background-image: url("../images/sand14.jpg" );
     background-repeat:no-repeat;
     background-position:center;
@@ -55,7 +54,6 @@ a{
 
 /* about me section - includes a synopsis of me and image*/
  #about-me{
-    /* background-color:cornsilk; */
     background-image: url("../images/blue7.jpg" );
     
     background-repeat:no-repeat;
@@ -68,14 +66,6 @@ a{
  }
  
 
-
- .image-container{
-
-    /* border:4px solid purple; */
-    /* height:20em; */
-    /* width:20em;*/
-   
- }
  .image-container #img-me{
     /* border:2px solid green; */
     margin:1rem;
@@ -134,7 +124,7 @@ h3{
    width:8rem;
  }
 
- .img-project-container img{
+ .img-project-container img {
    width:100%;
    height:100%;
    object-fit:fill;
@@ -173,15 +163,14 @@ h3{
    #projects{
       flex-direction:column;
       align-content: center;
+      padding:0px;
    }
 }
  
 
  /* skills section */
  #skill-section{
-   /* background-color:rgb(126, 56, 126); */
    background-image: url("../images/blue.jpg" );
-    
    background-repeat:no-repeat;
    background-position:center;
    background-size:cover;
@@ -192,13 +181,11 @@ h3{
  }
 
 #skills{
-   /* border:3px solid red; */
    display:flex;
    flex-wrap: wrap;
   }
    
- .skill-container{
-  /* border:2px solid blue; */
+ .skill-container {
   padding:1em 2em 0 4em;
   height: 3rem;
   width:2rem;
@@ -215,39 +202,71 @@ h3{
    font-weight:900;
    padding-left:0.5em;
  }
+ 
+ /* media queries*/
+ @media screen  and (max-width:800px){
+   #gitlogo{
+      padding-left:4em;
+    }
 
+   .skill-container{
+      flex:25%;
+      padding:1em 2em 0 4em;
+      height: 3rem;
+      width:2rem;
+   }  
+} 
+
+
+/*footer dection*/
 
 footer{
-   background-color:rgb(126, 56, 126);
-   background-image: url("../images/blue4.jpg" );
-    
+   background-image: url("../images/blue4.jpg" );  
    background-repeat:no-repeat;
    background-position:center;
    background-size:cover;
- 
-   height:6.5em;
+   height:8em;
 }
-footer img{
-   /* position:relative; */
-   bottom:4.5em;
-   left:2.5em;
-   width:5%
+
+#contact{
+   padding:0 0 0 3em;
+   display:flex; 
+}
+
+.contact-img-container{
+   width:1.5em;
+}
+
+.contact-img-container img{
+   width:100%;
+   height:auto;
+}
+
+#linked-img{
+   padding-left:3em;
    
+}
+#foot-h3{
+   padding-bottom:0;
+}
+
+.contact-logo{
+   padding-right:2em;
 }
 
 @media screen  and (max-width:2000px){
    footer img{
-   width:2%;
+   /* width:2%; */
    }
 }
 @media screen  and (max-width:1500px){
    footer img{
-   width:3%;
+   /* width:3%; */
    }
 }
 @media screen  and (max-width:1000px){
    footer img{
-   width:5%;
+   /* width:5%; */
    }
 }
 
