@@ -7,31 +7,31 @@ html{
     font-size:1.2rem;
 }  
 
-a{color:black;
+a{
+  color:aliceblue;
   text-decoration: none;
 }
 
 /* header - includes name and nav bar */
  header {
-    /* border:3px solid green; */
     position:sticky;
     top:0;
     width:100%;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background-image: url("../images/header-bg.png" );
+    /* background-color:rgb(126, 56, 126); */
+    background-image: url("../images/sand14.jpg" );
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-
  }
 
 #name{
-    font-family:Tangerine, cursive;
+    font-family:Poppins,"sans-serif";
     padding-left:2rem;
     font-size:3rem;
-    color:rgb(25, 27, 28);
+    color:aliceblue;
 }
 
 #nav-list{
@@ -47,11 +47,20 @@ a{color:black;
     font-weight: 550;
   }
 
+  #nav-list  a:hover{
+   color:cyan;
+ }
+
 
 
 /* about me section - includes a synopsis of me and image*/
  #about-me{
-    background-color:cornsilk;
+    /* background-color:cornsilk; */
+    background-image: url("../images/blue7.jpg" );
+    
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
     display:flex;
     justify-content:space-around;
     width:100%;
@@ -76,8 +85,12 @@ a{color:black;
  }
  .paragraph{
     width:80%;
-    padding:0 2rem 1rem 2rem;
-    
+    padding:0 2rem 1rem 2rem;  
+    color:azure 
+ }
+
+ .paragraph span{
+   font-weight: bold;
  }
  
 
@@ -87,31 +100,36 @@ a{color:black;
 
 h3{
    margin-top:0%;
-   padding-top:1rem;
-   text-align: center;
-   font-family: Tangerine, cursive;
-   font-size:3rem;
-   color:rgb(25, 27, 28);
+   padding:1rem 2rem;
+   font-family: Poppins;
+   font-size:2rem;
+   color:azure;
 }
 
 
 #project-section{
-   /* border:2px solid blue;*/
-    background-color:darkseagreen;
-   
-  
+    background-image: url("../images/blue4.jpg" );
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
 }
 
 #projects{
    display:flex;
    flex-wrap:wrap;
    justify-content:space-around;
-   /* align-content: center; */
-   
+}
 
+.column{
+   padding-bottom:4em;
+}
+
+
+.img-project-container:hover{
+   border: 0.62em solid cyan;
 }
  .img-project-container{
-   border:5px solid cornsilk;
+   border:0.6em solid lightsteelblue;
    height: 6rem;
    width:8rem;
  }
@@ -123,9 +141,50 @@ h3{
 
  }
 
+ #tea-info, #wood-info, #mixed-info, #art-info{
+   display:none;
+   color:azure;
+   font-size:small;
+ }
+
+ button{
+   padding: 0.4rem;
+   margin:0.5rem;
+   font-weight:bolder;
+   font: size 0.8em;
+   box-shadow: 1px 2px  cyan;
+   background-color:lightsteelblue;
+   
+ }
+ 
+ /* media queries */
+
+ @media screen  and (max-width:940px){
+   
+   .column{
+      flex:50%;
+   }   
+   #projects{
+      padding-left:5em;
+   } 
+}
+
+@media only screen and (max-width:600px){
+   #projects{
+      flex-direction:column;
+      align-content: center;
+   }
+}
+ 
+
  /* skills section */
  #skill-section{
-   background-color:cornsilk;
+   /* background-color:rgb(126, 56, 126); */
+   background-image: url("../images/blue.jpg" );
+    
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
  }
 
  #heading-skills{
@@ -145,30 +204,51 @@ h3{
   width:2rem;
  }
 
+ #gitlogo{
+   padding-left:6em;
+ }
+
  .skill-lang{
    font-size:0.5em;
    font-family: poppins, "sans-serif";
    color:black;
+   font-weight:900;
    padding-left:0.5em;
  }
-/* 
- .fa{ */
-   /* font-size:10rem; */
-   /* height:100%; */
-   /* width:100%; */
-   /* object-fit:contain; */
- /* } */
 
-/* footer */
 
 footer{
-   background-color:darkseagreen;
+   background-color:rgb(126, 56, 126);
+   background-image: url("../images/blue4.jpg" );
+    
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+ 
    height:6.5em;
 }
 footer img{
-   position:relative;
-   bottom:3.5em;
+   /* position:relative; */
+   bottom:4.5em;
    left:2.5em;
    width:5%
    
 }
+
+@media screen  and (max-width:2000px){
+   footer img{
+   width:2%;
+   }
+}
+@media screen  and (max-width:1500px){
+   footer img{
+   width:3%;
+   }
+}
+@media screen  and (max-width:1000px){
+   footer img{
+   width:5%;
+   }
+}
+
+   

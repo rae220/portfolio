@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/b3904e5a13.js" crossorigin="anonymous"></script>
-
+    <script src="./main.js " type ="text/javascript" defer></script>
     <title>Rae Taylor</title>
+    
 </head>
 
 <body>
@@ -25,10 +26,10 @@
         <nav id="nav-bar"> 
             <ul id="nav-list">
                 <li><a href="#" >Home</a></li>
-                <li><a href="#About-Me">About Me</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#skill-section">Skills</a></li>
+                <li><a href="#heading-contact">Contact</a></li>
               </ul>
         </nav>
        
@@ -56,35 +57,43 @@
 
     <div id="projects"> 
 
-        <div id="tea-shop">
+        <div class="column" class ="one">
             <div class="img-project-container">
-                 <img class="img-tea-shop" src="./images/webpage-img-tea.jpg">
+                 <img class="img-tea-shop" src="./images/webpage-img-tea.jpg" alt="image of teashop website">
             </div>
-            <p>Tea Shop <br> <span>webpage using HTML and CSS</span></p>
+            <button type="button" id="tea" onclick="teaInfo()" >show</button>
+            <p id = "tea-info">A codcademy project... <br>
+                            creates a landing page for The Cozy Tea Shop </p>
         </div>
 
 
-        <div id="wood-shed ">
+        <div class="column">
             <div class="img-project-container">
-                <img class="img-wood-shed" src="./images/webpage-img-wood.jpg">
+                <a href = "..//Tea-Shop/index.html"><img class="img-wood-shed" src="./images/webpage-img-wood.jpg" alt ="image of a wood turning website"></a>
            </div>
-           <p>Wood Shed <br> <span>webpage using HTML and CSS</span></p>
-           
+           <button  id="wood" type="button">show</button>
+           <p id = "wood-info">A codcademy project... <br>
+            creates a landing page for The Wood Shed : <br>
+             a fictional wood turning artisan</p>
         </div>
 
-        <div id="mixed-messages">
+        <div class="column">
             <div class="img-project-container">
-                <img class="img-mixed-messages" src="./images/output-img-mixed.jpg">
+                <img class="img-mixed-messages" src="./images/output-img-mixed.jpg" alt="image of a message generated from javascript code">
            </div>
-           <p>Mixed Messages<br> <span>message from the universe using JS</span></p>
+           <button  id="mixed" type="button">show</button>
+           <p id = "mixed-info">A JavaScript project... <br> 
+              a message from the universe</p>
         </div>
 
-        <div id="disigital-art">
+        <div class="column">
             <div class="img-project-container">
-                <img class="img-digital-art" src="./images/winnie.jpg">
+                <img class="img-digital-art" id="merlin" src="./images/winnie.jpg" alt="digital artwork of a witch and black cat">
            </div>
-            <p>Digital Art</p>
-        </div>
+           <button  id="art" type="button">show</button>
+           <p id = "art-info"> artwork using... <br>
+                   Inkscape - vector graphics editor 
+                   Procreate - digital illustrator </p>        </div>
 
     </div>
 </div>
@@ -109,7 +118,7 @@
                 style="color: #01010d;"><span class="skill-lang">Javascript</span></i>
             </div>
 
-            <div class="skill-container">     
+            <div class="skill-container" id="gitlogo">     
                 <i class="fa-brands  fa-github fa-2xl" 
                 style="color: #01010d;"><span class="skill-lang">GitHub</span></i>   
             </div>
@@ -119,7 +128,7 @@
     <!-- contact -->
     <footer>
         <h3 id="heading-contact">Contact</h3> 
-        <img class="img-gmail" src="./images/gmail.png">
+        <img class="img-gmail" src="./images/gmail.png" alt="google email image">
     </footer>
 
 </body>
