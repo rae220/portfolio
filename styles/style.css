@@ -202,6 +202,19 @@ h3{
    font-weight:900;
    padding-left:0.5em;
  }
+
+
+ .fa-html5 {
+   color: #f65904;
+ }
+
+ .fa-css{
+   color: #0d3dea;
+ }
+
+ .fa-square-js, .fa-github{
+   color:#01010d;
+ }
  
  /* media queries*/
  @media screen  and (max-width:800px){
@@ -225,7 +238,7 @@ footer{
    background-repeat:no-repeat;
    background-position:center;
    background-size:cover;
-   height:8em;
+   height:11em;
 }
 
 #contact{
@@ -254,20 +267,14 @@ footer{
    padding-right:2em;
 }
 
-@media screen  and (max-width:2000px){
-   footer img{
-   /* width:2%; */
-   }
+.lower{
+   color:azure
 }
-@media screen  and (max-width:1500px){
-   footer img{
-   /* width:3%; */
-   }
-}
-@media screen  and (max-width:1000px){
-   footer img{
-   /* width:5%; */
-   }
+
+#copy{
+   text-align: center;
+   color:azure;
+   
 }
 
    
